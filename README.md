@@ -13,6 +13,7 @@ Each subfolder or note includes a brief description of the idea, potential datas
 Below are the project ideas currently in development or planned.  
 Each idea links to a folder or note with more details.
 
+[Companionship and Mental Health](./healthcare/companionship-and-mental-health.md)
 
 *More ideas will be added soon.*
 
