@@ -37,9 +37,20 @@ Modern content platforms increasingly trap users within "preference bubbles" by 
 - **Regional/content differences**: Sensitivity required for political/cultural topics.
 
 ## 🔗 Related Projects / Inspirations  
-- Studies on echo chamber reduction via diverse recommenders using MovieLens :contentReference[oaicite:5]{index=5}  
-- “Heat-spreading” algorithm for diversity-accuracy tradeoff :contentReference[oaicite:6]{index=6}  
-- FairMatch graph-based diversity boosting :contentReference[oaicite:7]{index=7}  
-- Temporal diversity research in CF systems :contentReference[oaicite:8]{index=8}  
-- Surveys on fairness & diversity in RS :contentReference[oaicite:9]{index=9}  
-- Studies on algorithmic bias and echo chambers :contentReference[oaicite:10]{index=10}
+- Studies on echo chamber reduction via diverse recommenders using MovieLens [1]  
+- “Heat-spreading” algorithm for diversity-accuracy tradeoff [2]  
+- FairMatch graph-based diversity boosting [3]  
+- Temporal diversity research in CF systems [4]  
+- Surveys on fairness & diversity in RS [5]  
+- Studies on algorithmic bias and echo chambers [6]
+
+---
+### 📚 References  
+[1] https://dl.acm.org/doi/10.1007/978-3-031-78554-2_16  
+[2] https://pmc.ncbi.nlm.nih.gov/articles/PMC2842039/  
+[3] https://arxiv.org/abs/2005.01148  
+[4] https://www.biz.uiowa.edu/faculty/nstreet/p210.pdf  
+[5] https://dl.acm.org/doi/10.1145/3664928  
+[6] https://www.shs-conferences.org/articles/shsconf/pdf/2024/22/shsconf_icense2024_05001.pdf
+
+
