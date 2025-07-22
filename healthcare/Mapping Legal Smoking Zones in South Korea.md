@@ -44,3 +44,9 @@ In many cities, “No Smoking” signs are ubiquitous—even on sidewalks or pri
 - “SmokeMap” (pilot project in Japan)  
 - Seoul’s Non-Smoking Zone Ordinances  
 - “WhereToSmoke” app (used in parts of the U.S.)
+
+---
+
+## ✅ Implementation  
+GitHub Repository: [hojjang98/Misc-Projects – seoul-smoking-gis](https://github.com/hojjang98/Misc-Projects/tree/main/seoul-smoking-gis)  
+This project has been implemented using **Folium**, **Pandas**, and **public GIS data** for Yongsan-gu and Yeongdeungpo-gu in Seoul. The repo contains code for mapping, distance analysis, and initial visualization results.
