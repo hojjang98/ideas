@@ -1,44 +1,78 @@
-# 🧠 Project Title: **FactRank – A Publicly Curated Fact Repository**
+# 🧠 Project Title: FactRank — A Publicly Curated Fact Repository
 
-## 🔍 Summary  
-FactRank is a collaborative platform for verifying and archiving factual information. It aims to combat misinformation by assigning **credibility scores** to submitted facts, based on community input and algorithmic evaluation. Unlike open wikis, the platform emphasizes **verifiability**, **evidence tracking**, and **reputation-based fact scoring**.
+## 🔍 Summary
+FactRank is a collaborative platform designed to **verify and archive factual information**.  
+It assigns **credibility scores** to submitted facts through community input and algorithmic evaluation.  
+Unlike open wikis, FactRank emphasizes **verifiability, citation tracking, and reputation-based scoring**, aiming to combat misinformation in domains like politics, health, and science.
 
-## 🎯 Problem Statement  
-In the age of social media, misinformation spreads faster than truth. Open platforms allow anyone to post content, but lack mechanisms to evaluate whether a piece of information is actually **true, well-evidenced, or manipulated**. There is a growing need for a system where **verifiable facts are separated from speculation**, especially in domains like health, politics, and science.
+---
 
-## 📚 Background & Motivation  
-- Existing platforms (e.g., Wikipedia, NamuWiki) are editable but often **lack citation enforcement**  
-- Search engines prioritize popularity over credibility  
-- Misinformation can **affect elections, public health, and social trust**  
-- Critical thinking skills are not evenly distributed across users  
-- We need a **structured, crowd-verifiable fact library**
+## 🎯 Problem Statement
+- Misinformation spreads faster than truth, amplified by social media algorithms.  
+- Open platforms (e.g., wikis) allow contributions but often lack **robust citation enforcement**.  
+- Search engines rank content by popularity, not credibility.  
+- The public lacks equal access to critical evaluation skills.  
 
-## 📊 Potential Data Sources  
-- Verified news APIs (e.g., Reuters, AP, Yonhap)  
-- Government open data portals  
-- Research papers (e.g., Semantic Scholar, PubMed, arXiv)  
-- WHO/CDC data for health-related facts  
-- User-contributed facts with reference links
+**Goal:** Build a **structured, verifiable fact library** that separates **objective facts** from speculation or opinion.
 
-## 🧪 Possible Approaches  
-- RLHF (Reinforcement Learning from Human Feedback)-inspired scoring of facts  
-- Fact “blocks” with source, date, citation level, topic tag  
-- Community voting + moderation reputation systems  
-- LLM-assisted fact extraction from cited sources  
-- Plausibility models trained on fact-vs-fake datasets (e.g., LIAR, Fakeddit)
+---
 
-## 💡 Expected Insights or Applications  
-- A living repository of **trust-scored facts**, searchable by topic  
-- A browser plugin that flags unverified or low-ranked claims  
-- Dashboards showing **fact gaps** in hot issues (e.g., elections, pandemics)  
-- A classroom or civic education tool to promote **evidence-based reasoning**
+## 📚 Background & Motivation
+- Wikipedia and NamuWiki are valuable, but citation rigor varies.  
+- Fact-checking websites (e.g., PolitiFact, Snopes) exist, but lack **scalability and crowd engagement**.  
+- False claims have affected elections, pandemics, and public trust.  
+- FactRank proposes a **crowd-curated yet algorithmically supported fact repository** to restore credibility.
 
-## ⚠️ Notes  
-- The platform does **not aim to police opinions**, only claims labeled as **objective facts**  
-- Potential challenges: brigading, coordinated disinfo attacks, overreliance on crowd  
-- Needs clear fact classification: *factual*, *uncertain*, *opinion*, *speculative*
+---
 
-## 🔗 Related Projects / Inspirations  
-- **PolitiFact**, **Snopes**, **Wikidata**, **Media Bias/Fact Check**  
-- Kaggle competitions on fake news detection  
-- Google’s Fact Check Explorer
+## 📊 Potential Data Sources
+- Verified news APIs (Reuters, AP, Yonhap).  
+- Government open data portals.  
+- Academic repositories (Semantic Scholar, PubMed, arXiv).  
+- WHO/CDC data for health-related claims.  
+- User-submitted facts with mandatory source links.  
+
+---
+
+## 🧪 Technical Approach
+1. **Fact Structuring**  
+   - Facts stored as “blocks” with source, date, citation level, and topic tags.  
+
+2. **Scoring System**  
+   - Community voting + reputation-based weighting.  
+   - RLHF-inspired reinforcement: reward well-sourced contributions.  
+
+3. **Algorithmic Support**  
+   - LLM-assisted fact extraction and citation verification.  
+   - Plausibility models trained on fake-news datasets (LIAR, Fakeddit).  
+
+4. **Moderation & Transparency**  
+   - Fact classification: *factual*, *uncertain*, *opinion*, *speculative*.  
+   - Public audit trail of evidence and edits.  
+
+---
+
+## 💡 Applications
+- **Consumers:** Searchable library of credibility-ranked facts.  
+- **Media:** Browser plugin that flags unverified or low-ranked claims.  
+- **Policy & Education:** Dashboards for fact gaps in public debates.  
+- **Classrooms:** Teaching tool for evidence-based reasoning.  
+
+---
+
+## ⚠️ Notes
+- FactRank does **not police opinions** — only objective factual claims.  
+- Risks: brigading, disinformation attacks, overreliance on crowds.  
+- Needs robust governance and bias mitigation.  
+
+---
+
+## 🔗 Related Inspirations
+- Fact-checking platforms: **PolitiFact**, **Snopes**, **Media Bias/Fact Check**.  
+- Structured knowledge bases: **Wikidata**.  
+- Kaggle fake news detection challenges.  
+- Google’s **Fact Check Explorer**.  
+
+---
+
+> “Not just opinions — a public library of verifiable facts.”

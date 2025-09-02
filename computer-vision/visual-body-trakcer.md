@@ -1,70 +1,77 @@
 # 🧠 Project Title: BodyTrack3D — Visual Body Change Tracker with Computer Vision
 
-## 🔍 Summary  
-BodyTrack3D is a computer vision-based tool that tracks **subtle upper-body muscle changes** over time (e.g., chest expansion, back width, shoulder broadening).  
-By extracting pose-based geometric features from periodic photos, it provides **quantitative visual feedback** to fitness users beyond subjective "before & after" comparisons.
+## 🔍 Summary
+BodyTrack3D is a computer vision-based tool that tracks **upper-body muscle changes** (chest, shoulders, back) over time.  
+By extracting pose-based geometric features from periodic photos, it offers **quantitative and visual feedback**, moving beyond subjective “before & after” comparisons.
 
 ---
 
-## 🎯 Problem Statement  
-- Traditional “eye-check” (눈바디) is subjective and inconsistent  
-- Muscle growth in areas like **chest, shoulders, and back** is hard to quantify visually  
-- Users often feel uncertain about progress, leading to **loss of motivation**  
-→ A structured, pose-aware, geometric analysis tool can fill this gap
+## 🎯 Problem Statement
+- Traditional “눈바디” (eye-check) is subjective and unreliable.  
+- Muscle growth in chest, shoulders, and back is visually subtle and hard to measure.  
+- Existing methods (weight, InBody scans) fail to capture visible shape change.  
+
+**Goal:** Provide a **pose-aware, geometric analysis tool** that quantifies body change and supports user motivation.
 
 ---
 
-## 📚 Background & Motivation  
-- Inspired by personal frustration: “Am I really growing?”  
-- Current solutions (weight, InBody scans) don’t capture visible shape change  
-- Pose estimation enables consistent alignment and measurement  
-- Aim to provide **objective, visual, and measurable** feedback over time
+## 📚 Background & Motivation
+- Born from the question: *“Am I really making progress?”*  
+- Numbers like weight or fat percentage don’t always match what people want to see: **shape change**.  
+- Advances in pose estimation enable **consistent alignment and comparison** across photos.  
+- Aims to give fitness users **objective, measurable, and motivating visual evidence**.
 
 ---
 
-## 📊 Potential Data Sources  
-- User-captured photos (front / side / back) on a regular basis  
-- OpenPose / BlazePose / MediaPipe for 2D keypoint estimation  
-- Optional: SMPL or BodyPix for 3D mesh approximation  
+## 📊 Potential Data Sources
+- User photos (front / side / back) collected periodically.  
+- Pose estimation frameworks: **OpenPose, BlazePose, MediaPipe**.  
+- Optional: **SMPL / BodyPix** for 3D body mesh approximation.
 
 ---
 
-## ⚙️ Technical Approach  
+## 🧪 Technical Approach
+1. **Pose Alignment**  
+   - Standardize body posture using 2D pose estimation.  
+   - Normalize size, crop, and rotate for consistency.  
 
-### 1. **Pose Alignment**
-- Use 2D pose estimation to ensure consistent body posture
-- Normalize image size, crop and rotate to standard alignment
+2. **Feature Extraction**  
+   - Key geometric metrics:  
+     - Shoulder width (distance between keypoints)  
+     - Chest contour (ribcage-level width)  
+     - Back angle/area (trapezius spread)  
+     - Arm-body angle (symmetry check)  
 
-### 2. **Feature Extraction**
-- Key metrics from skeleton:
-  - Shoulder width (distance between keypoints)
-  - Chest contour (horizontal width at upper ribs)
-  - Back shape (angle or area of trapezius region)
-  - Arm-body angle (for postural feedback)
+3. **Change Detection**  
+   - Track metrics over time (weekly/monthly).  
+   - Visualize changes with charts, heatmaps, or overlays.  
 
-### 3. **Change Detection**
-- Track metric changes over time (weekly/monthly)
-- Visualize with line charts, heatmaps, or morph overlays
-
-### 4. **Output Interface**
-- Streamlit / Web Dashboard with:
-  - Before–after overlay
-  - Metric table and graphs
-  - Optional “3D-like” view via mesh approximation
-
----
-
-## 🧪 Possible Extensions  
-- Integrate with **mobile camera** or mirror for real-time feedback  
-- Add **pose feedback** (e.g., symmetry warnings)  
-- Connect with wearable data (heart rate, calorie burn) for multi-modal analysis
+4. **Output Interface**  
+   - Web dashboard (Streamlit/Flask):  
+     - Before–after overlay  
+     - Metric table & graphs  
+     - Optional pseudo-3D mesh view  
 
 ---
 
-## 💡 Expected Outcomes  
-- Objective evidence of visual changes in physique  
-- Boost in motivation for fitness users  
-- Applications for personal fitness tracking, home training apps, or PT coaches  
+## 💡 Applications
+- **Fitness Motivation:** Show measurable progress beyond scales.  
+- **Personal Training:** Support PT coaches with visual evidence.  
+- **Consumer App:** Mobile-based “visual growth tracker” for gym-goers.  
+
+---
+
+## ⚠️ Notes
+- Lighting, angle, and clothing variation may affect accuracy.  
+- Requires privacy-sensitive handling of user photos.  
+- Baseline calibration (e.g., fixed camera setup) is important for reliability.
+
+---
+
+## 🔗 Related Inspirations
+- Pose-based fitness apps (AI squat/push-up counters).  
+- 3D body scanning solutions for professional fitness tracking.  
+- Self-tracking tools combining visual and biometric data.
 
 ---
 

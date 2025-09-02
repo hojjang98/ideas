@@ -1,54 +1,74 @@
-# 🧠 Project Title: **ScentLens — AI-Powered Perfume Preference Matcher**
+# 🧠 Project Title: ScentLens — AI-Powered Perfume Preference Matcher
 
-## 📚 Background & Motivation  
-- Perfume shopping often feels overwhelming due to the **sheer number of options** and abstract descriptions ("woody", "oriental", "fresh").  
-- Many people, including myself, have experienced **decision paralysis** — I wanted to buy a perfume but ended up not buying anything because I couldn’t choose.  
-- There is a gap between professional fragrance classification and **what ordinary users actually need**: simple, personalized guidance.  
-- By combining **AI recommendation systems** with **emotional profiling**, users can discover perfumes more intuitively and confidently.  
-
-
-## 🔍 Summary  
-ScentLens is a mobile and web platform that helps users **discover perfumes** that align with their **unique personality, lifestyle, and emotional state**.  
-It goes beyond traditional “fragrance notes” and leverages **AI-driven preference analysis** to recommend scents, offering users a **data-driven, personalized perfume journey**.  
+## 🔍 Summary
+ScentLens is a mobile and web platform that helps users **discover perfumes** aligned with their **personality, lifestyle, and emotions**.  
+It combines **AI-driven recommendation systems** with **emotional profiling**, making fragrance discovery intuitive, personal, and data-driven.
 
 ---
 
-## 🎯 Key Features  
+## 🎯 Problem Statement
+- Perfume shopping is overwhelming due to thousands of options and abstract descriptions (“woody”, “fresh”, “oriental”).  
+- Many people, including myself, experience **decision paralysis** — leaving stores empty-handed.  
+- Current classification systems cater to experts, not ordinary users seeking simple guidance.  
 
-### 1. Preference Profiling  
-- Quick personality-style questionnaire (favorite season, food, travel destination, colors)  
-- Generates a **“Scent Profile”** (e.g., citrus-fresh, warm-woody, floral-elegant)  
-
-### 2. AI-Powered Recommendations  
-- Uses perfume databases (e.g., Fragrantica) with note composition and user reviews  
-- Recommends perfumes based on **collaborative filtering** (similar user preferences)  
-- Suggests both **safe picks** and **experimental scents**  
-
-### 3. Mood-Based Picks  
-- Users log daily moods (“excited”, “focused”, “romantic”)  
-- AI recommends perfumes that match or balance the current emotional state  
-
-### 4. Perfume Map Visualization  
-- Interactive **fragrance universe map** showing families (citrus, floral, woody, oriental)  
-- User’s scent profile highlighted for exploration  
-
-### 5. Review & Community Features  
-- Users share their own impressions and scent memories  
-- AI summarizes community feedback for quick insights  
+**Goal:** Provide an AI tool that bridges expert fragrance taxonomies with **personalized user preferences and moods**.
 
 ---
 
-## 📊 Technology Stack  
-- **NLP**: Hugging Face Transformers for review analysis  
-- **Recommendation System**: Collaborative filtering + content-based filtering  
-- **Frontend**: Flutter (mobile), React (web)  
-- **Backend**: FastAPI + PostgreSQL  
-- **Visualization**: D3.js, Plotly  
+## 📚 Background & Motivation
+- Inspired by personal experiences of struggling to choose a perfume despite wanting one.  
+- Highlights the gap between **professional fragrance language** and **consumer needs**.  
+- Advances in recommendation systems and NLP make personalized scent discovery feasible.  
 
 ---
 
-## 💡 Unique Selling Points  
-- Makes **perfume selection personal and data-driven**  
-- Goes beyond “marketing language” by analyzing **real user reviews & emotional cues**  
-- Helps users **explore new fragrances** while avoiding blind-buy mistakes  
-- Creates a **community-driven fragrance discovery platform**  
+## 📊 Potential Data Sources
+- Public perfume databases (e.g., Fragrantica) with note breakdowns.  
+- User reviews and ratings from online communities.  
+- Questionnaire/survey data collected within the app.  
+- Crowdsourced emotional tagging of scents.  
+
+---
+
+## 🧪 Technical Approach
+1. **Preference Profiling**  
+   - Short questionnaire (favorite colors, seasons, travel style).  
+   - Generates a **personal scent profile** (e.g., citrus-fresh, woody-elegant).  
+
+2. **Recommendation Engine**  
+   - Hybrid of collaborative filtering + content-based filtering.  
+   - Suggests **safe picks** and **exploratory scents**.  
+
+3. **Mood-Based Matching**  
+   - Users log current moods (“focused”, “romantic”, “excited”).  
+   - AI recommends perfumes to complement or balance that state.  
+
+4. **Visualization & Community**  
+   - Interactive **fragrance universe map** (families: citrus, floral, woody, oriental).  
+   - Users share impressions, while AI summarizes community feedback.  
+
+---
+
+## 💡 Applications
+- **Personalized Perfume Discovery:** Match users to scents they’ll likely enjoy.  
+- **Decision Support:** Reduce blind-buy mistakes and wasted purchases.  
+- **Community Engagement:** Build a user-driven fragrance platform.  
+- **Market Research:** Provide brands with insights into consumer mood–scent relationships.  
+
+---
+
+## ⚠️ Notes
+- Fragrance perception is subjective → requires large, diverse datasets.  
+- Data availability depends on scraping or partnerships with fragrance platforms.  
+- Emotional profiling needs careful design to avoid oversimplification.  
+
+---
+
+## 🔗 Related Inspirations
+- Fragrantica database and community reviews.  
+- Spotify-style recommendation systems (collaborative filtering).  
+- Mood-based product recommendation engines.  
+
+---
+
+> “Discover scents that match not just your style — but your soul.”

@@ -1,55 +1,75 @@
-# 🧠 Project Title: **Sweat Forecast: Predicting Pit Stain Risk by Hour**
+# 🧠 Project Title: Sweat Forecast — Predicting Pit Stain Risk by Hour
 
-## 🔍 Summary  
-This project aims to develop a model that predicts the likelihood of **visible underarm sweat stains ("pit stains")** based on weather conditions, clothing color, activity level, and time of day. The goal is to help people make smarter clothing choices—especially in hot, humid summers—by telling them if it’s safe to wear gray today.
-
----
-
-## 🎯 Problem Statement  
-- Gray shirts are a risky fashion choice in summer.  
-- Presentations, dates, interviews… pit stains can be embarrassing.  
-- Yet, people rely on guesswork to pick what to wear.  
-→ We need a **data-driven “pit stain alert” system**.
+## 🔍 Summary
+Sweat Forecast is a system that predicts the likelihood of **visible underarm sweat stains** (“pit stains”) using weather, clothing, and activity data.  
+It aims to help users make smarter wardrobe choices in hot, humid conditions — answering the critical question: *“Can I safely wear gray today?”*
 
 ---
 
-## 📚 Background & Motivation  
-- Rising global temperatures and heat wave frequency  
-- Clothes and colors show sweat differently (e.g., gray ≫ black or white)  
-- Common online questions: “Can I wear a gray shirt today?”  
-- Inspired by Reddit/Korean forums full of sweat-related wardrobe regrets
+## 🎯 Problem Statement
+- Pit stains are embarrassing in social and professional settings.  
+- People rely on guesswork to choose clothing in summer.  
+- Existing weather apps provide temperature and humidity but no **sweat visibility prediction**.  
+
+**Goal:** Deliver a personalized “pit stain alert” system to guide daily clothing decisions.
 
 ---
 
-## 📊 Potential Data Sources  
-- Hourly weather data (temperature, humidity) from national meteorological APIs  
-- Sweat absorption/visibility by fabric & color (academic papers, product specs)  
-- Wearable data (e.g., Fitbit, Apple Health: heart rate, step count)  
-- Crowdsourced or scraped user comments: "I sweated like crazy today"  
+## 📚 Background & Motivation
+- Rising global temperatures and frequent heat waves.  
+- Sweat visibility varies dramatically by fabric and color (gray ≫ black or white).  
+- Inspired by online communities (Reddit, Korean forums) full of regret stories like “I shouldn’t have worn gray today.”  
+- Highlights the need for **data-driven fashion guidance** in summer.  
 
 ---
 
-## 🧪 Possible Approaches  
-- Combine weather + activity + clothing info to build a **classification model**  
-  (Logistic Regression, Random Forest, LSTM, etc.)  
-- Assign "sweat visibility weights" by clothing material & color  
-- Visualize risk with hourly heatmaps (e.g., 2 PM = maximum danger)  
-- Build a simple mobile/web interface to display daily pit stain risk  
-- Optional: Add shirt color recommendation system
+## 📊 Potential Data Sources
+- Hourly meteorological data: temperature, humidity, wind (national APIs).  
+- Fabric/color sweat visibility studies (academic research, product specs).  
+- Wearable activity data (Fitbit, Apple Health, step count, heart rate).  
+- Crowdsourced data: user reports on sweat experiences.  
 
 ---
 
-## 💡 Expected Insights or Applications  
-- A “Yes or No” system for wearing gray  
-- A pit-stain forecast app with hourly risk scores  
-- Context-aware clothing suggestion tool  
-- Data-driven fashion decisions during heat waves  
-- Potential for ad collaboration (e.g., deodorant brands, athletic wear)
+## 🧪 Technical Approach
+1. **Feature Engineering**  
+   - Combine weather + activity + clothing info.  
+   - Assign sweat-visibility weights by fabric and color.  
+
+2. **Modeling**  
+   - Classification models: Logistic Regression, Random Forest, XGBoost, or LSTM (temporal).  
+   - Output = Pit Stain Risk Score (0–100).  
+
+3. **Visualization**  
+   - Hourly risk heatmaps (e.g., 2 PM = maximum danger).  
+   - Shirt color recommendation system.  
+
+4. **Deployment**  
+   - Mobile/web interface showing daily sweat forecast.  
+   - Push notifications for high-risk times.  
 
 ---
 
-## 🤡 Bonus Features  
-- **“Pit Index” score** (0–100): Seoul at 89 = avoid gray at all costs  
-- “Safe to raise arms” time window estimator  
-- Could even host a fun mini Kaggle challenge: *Sweat Classification 2025*
+## 💡 Applications
+- **Wardrobe Assistant:** Quick “safe or not” guidance for wearing gray.  
+- **Lifestyle App:** Daily pit-stain forecast with hourly risk scores.  
+- **Advertising Opportunities:** Partner with deodorant brands or sportswear companies.  
+- **Fun Data Science Project:** Fashion meets environmental analytics.  
 
+---
+
+## ⚠️ Notes
+- Sweat production varies individually; results are probabilistic, not absolute.  
+- Requires robust data for clothing material × weather × activity interactions.  
+- May need anonymized user reports to improve accuracy.  
+
+---
+
+## 🔗 Related Inspirations
+- Heat index and UV forecast apps.  
+- Clothing recommendation systems based on weather.  
+- Wearable-driven fitness tracking platforms.  
+
+---
+
+> “Don’t sweat your outfit choice — let the data decide.”

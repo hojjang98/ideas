@@ -1,79 +1,84 @@
-# 🧠 Project Title  
-**EchoMirror: Reveal Your Hidden Language Habits with AI**
+# 🧠 Project Title: EchoMirror — Reveal Your Hidden Language Habits with AI
+
+## 🔍 Summary
+EchoMirror is a personal AI assistant that analyzes **written and spoken language** to uncover unconscious verbal patterns.  
+It acts like a mirror, reflecting back repetitive phrases, tones, or sentence structures to increase **self-awareness of communication style** and support personal growth.
 
 ---
 
-## 🔍 Summary  
-This project creates a personal AI assistant that analyzes your written or spoken language to uncover unconscious verbal patterns. It acts like a mirror to reflect back the phrases, tones, or structures you tend to use—helping you become more aware of your communication style and potentially improve it.
+## 🎯 Problem Statement
+- People often ask themselves:  
+  *“Do I say ‘actually’ too much?”*  
+  *“Why do I sound passive or hesitant?”*  
+  *“What emotional tone do my messages convey?”*  
+
+- Existing tools (e.g., Grammarly) focus on **grammar and tone correction**, but rarely expose **habitual language patterns**.  
+- Without feedback, unconscious habits persist unnoticed.  
+
+**Goal:** Provide structured insights into language use, empowering users to reflect and adjust communication styles.
 
 ---
 
-## 🎯 Problem Statement  
-People often wonder:  
-> “Do I say ‘actually’ too much?”  
-> “Why do I sound passive or indirect?”  
-> “What kind of emotion does my writing give off?”
-
-Yet, we don’t have easy tools to analyze our **own language habits**, especially over time. Existing writing tools focus on grammar and tone correction, but not on revealing **how we habitually express ourselves**.
+## 📚 Background & Motivation
+- Inspired by curiosity: *“What are my unconscious speech and writing patterns?”*  
+- Many people are unaware of filler phrases, hedging, passive constructions, or repeated intensifiers.  
+- Language reflects **confidence, emotion, personality, and social stance**.  
+- Unlike correction tools, EchoMirror aims to **explain patterns over time** and foster **linguistic self-awareness**.
 
 ---
 
-## 📚 Background & Motivation  
-- Inspired by a personal question: *“What are my unconscious speech/writing patterns?”*  
-- Many people are unaware of repetitive words, filler phrases, passive tone, or even self-doubt signals.  
-- Language habits can reflect confidence, emotional state, social stance, and even personality traits.  
-- Tools like Grammarly help polish language, but don’t explain *why we sound the way we do*.  
-→ Let’s build an AI that **learns “you” over time** and provides **linguistic self-awareness**.
+## 📊 Potential Data Sources
+- Personal texts: journals, blogs, chat exports, emails.  
+- Optional: voice transcripts for spoken patterns.  
+- NLP resources: BERT, spaCy, LIWC dictionaries for tagging linguistic features.  
+- Privacy-first design: local storage or self-hosted deployment.  
 
 ---
 
-## 🔧 Core Features  
-### 1. 🧩 Personal Language Fingerprint  
-- Extract most frequent words/phrases/grammatical structures from your writings (e.g., emails, journals, chats)  
-- Cluster them by category: filler, hedging, intensifiers, passive constructions, etc.
+## 🧪 Technical Approach
+1. **Data Processing**  
+   - Tokenize texts, extract n-grams, apply POS tagging and dependency parsing.  
 
-### 2. 📈 Periodic Habit Feedback  
-- Weekly or monthly reports: “This week, you used ‘I guess’ 12 times. That’s 30% more than last week.”  
-- Graphs showing how usage changes over time.
+2. **Pattern Detection**  
+   - Build a habit dictionary (fillers, hedges, passive verbs, intensifiers).  
+   - Use clustering to group recurring linguistic behaviors.  
 
-### 3. 🧠 Emotion + Confidence Meter  
-- NLP sentiment and certainty scoring for your texts: e.g., “Your language is 80% confident, 15% unsure.”  
-- Track emotional tone trends: “You sounded more stressed this week.”
+3. **Trend Analysis**  
+   - Temporal analysis for weekly/monthly reports.  
+   - Visual graphs: frequency of phrases, emotional tone shifts.  
 
-### 4. 🔍 Contextual Insights  
-- Highlight usage patterns by topic:  
-  “In work emails, you tend to be more formal but overuse passive verbs.”  
-  “In journaling, you use lots of intensifiers like ‘so’, ‘very’, ‘really’.”
+4. **Feedback System**  
+   - Reports like: *“You used ‘I guess’ 12 times this week (+30%).”*  
+   - Confidence/emotion scoring: *“Your language was 75% confident, 20% uncertain.”*  
+   - Contextual insights: *“Work emails = more formal, journaling = more intensifiers.”*  
 
-### 5. 🎯 Behavior Nudges  
-- Subtle suggestions: “You often use ‘just’ as a softener. Would you like to explore alternatives?”  
-- Or let users *intentionally keep* those habits for self-expression—no hard judgment.
-
----
-
-## 📊 Potential Data Sources  
-- Your own writing: diary, Notion, blog, Substack, Kakao/Telegram exports  
-- (Optional) Voice input transcripts  
-- Use pre-trained models like BERT, spaCy, LIWC dictionaries for NLP tagging  
-- Privacy-safe local storage or self-hosted option
+5. **Optional Enhancements**  
+   - LLM-based summarizer of personal style.  
+   - Behavior nudges: *“You often use ‘just’ as a softener — want alternatives?”*  
 
 ---
 
-## 🧪 Possible Approaches  
-- Tokenize texts → extract n-grams → POS tagging → syntax tree parsing  
-- Build habit dictionary: filler, passive, hedge, etc.  
-- Use unsupervised clustering + temporal trend analysis  
-- Optional LLM-based summarizer for "your style"  
-  (“You tend to express hesitation with ‘maybe’, ‘somewhat’, and ‘not sure’”)
+## 💡 Applications
+- **Self-Awareness:** Track unconscious habits in communication.  
+- **Skill Development:** Improve clarity, assertiveness, or emotional tone.  
+- **Practical Use Cases:** Creators, speakers, interviewees, therapists.  
+- **Language Learning:** Help multilingual users spot cross-language habits.  
+- **Future Potential:** Personal LLM fine-tuner reflecting “your style.”  
 
 ---
 
-## 💡 Expected Insights or Applications  
-- Boost self-awareness of communication habits  
-- Improve clarity, assertiveness, or emotional tone  
-- Fun & useful for creators, speakers, therapists, job interviewees  
-- Could evolve into a *personal LLM fine-tuner* someday  
-- Helpful for multilingual learners noticing habits in Korean, English, etc.
+## ⚠️ Notes
+- Needs **privacy safeguards**, since journals and chats are sensitive.  
+- Feedback must be **non-judgmental**, supporting user choice (not enforcing “correctness”).  
+- Accuracy depends on language diversity in training data.  
 
 ---
 
+## 🔗 Related Inspirations
+- Grammarly (grammar/tone correction).  
+- LIWC (Linguistic Inquiry and Word Count) research tool.  
+- Journaling and self-reflection apps (Daylio, Reflectly).  
+
+---
+
+> “See yourself in your words — and grow through awareness.”

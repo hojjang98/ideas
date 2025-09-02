@@ -1,46 +1,76 @@
-# 🧠 Project Title:  
-**Seoul Youth Footprint: Mapping Young Mobility for Smarter Urban Policy**
+# 🧠 Project Title: Seoul Youth Footprint — Mapping Young Mobility for Smarter Urban Policy
 
-## 🔍 Summary  
-This project leverages vehicle ownership data and voluntary location tracking among young people in Seoul to identify popular destinations and design targeted youth programs. It aims to support data-driven urban planning that reflects real behavioral patterns.
+## 🔍 Summary
+Seoul Youth Footprint leverages **vehicle ownership statistics** and **voluntary location tracking** to map where young people actually spend their time.  
+By uncovering youth mobility patterns, it supports **data-driven, place-based policies** that better reflect real behavioral trends instead of relying solely on demographics.
 
-## 🎯 Problem Statement  
-Current youth-related policies often rely on demographic data rather than behavioral data, leading to mismatches between public services and actual youth interests or movement patterns. There's a lack of real-time or location-based insight into where young people actually spend their time.
+---
 
-## 📚 Background & Motivation  
-- Seoul’s youth population is mobile, diverse in lifestyle, and often underrepresented in place-based policy decisions.  
-- The idea was triggered by public vehicle ownership statistics, which revealed that many young people in Seoul own or use cars.  
-- Young residents often frequent hidden local spots or emerging areas not traditionally considered by policymakers.  
-- Understanding their mobility patterns can help rebalance public resources and empower youth-oriented initiatives.
+## 🎯 Problem Statement
+- Current youth policies are often based on static **demographic data**, not **behavioral movement data**.  
+- This mismatch results in public services that fail to align with youth interests or activity hubs.  
+- There is no widely available tool to visualize **real-time, location-based insights** on youth mobility in Seoul.  
 
-## 📊 Potential Data Sources  
-- Seoul Metropolitan Government’s youth vehicle ownership statistics (공공데이터포털)  
-- Population and district-level youth demographics (KOSIS, 서울열린데이터광장)  
-- Voluntary location tracking via smartphone apps (consent-based GPS logging)  
-- Public Points of Interest (POI) databases  
-- Event or footfall datasets (optional: telecom or card usage data with privacy considerations)
+**Goal:** Provide policymakers with **actionable insights** into where and how young people move, helping design smarter, more relevant urban programs.
 
-## 🧪 Possible Approaches  
-- Clustering analysis (e.g., DBSCAN, KMeans) to detect youth hotspot areas  
-- Time-based movement pattern modeling  
-- POI tagging to understand type of locations visited (cafes, co-working spaces, parks, etc.)  
-- Visualizations using GIS or interactive dashboards  
-- Optional: lightweight app prototype to recruit participants and collect data
+---
 
-## 💡 Expected Insights or Applications  
-- Discovery of actual popular areas among Seoul youth — beyond commonly assumed hotspots  
-- Data-driven program allocation: workshops, career services, mental health pop-ups, etc.  
-- Support for more responsive, flexible, and location-aware public services  
-- Potential expansion to other age groups or cities in the future
+## 📚 Background & Motivation
+- Seoul’s youth are highly mobile and diverse, yet underrepresented in urban planning decisions.  
+- Inspired by analyzing vehicle ownership statistics, which showed significant car usage among youth.  
+- Young residents often frequent **hidden or emerging local spots**, beyond traditional policy assumptions.  
+- Understanding these patterns can **rebalance resources** and create **youth-focused initiatives**.  
 
-## ⚠️ Notes  
-- This project does **not** aim to track individuals continuously or without consent.  
-- Privacy and anonymization techniques must be carefully implemented.  
-- Policy application may vary by district, requiring local government coordination.  
-- Car ownership may bias the sample — consideration of non-car users is essential in future extensions.
+---
 
-## 🔗 Related Projects / Inspirations  
-- Seoul Open Data Plaza — 차량 보유/등록 통계  
-- Google Location History research for urban mobility  
-- Copenhagen City Data Exchange (youth activity visualization pilot)  
-- “Where Are the Millennials Moving?” reports by US cities  
+## 📊 Potential Data Sources
+- Seoul Metropolitan Government youth vehicle ownership stats (공공데이터포털).  
+- KOSIS / 서울열린데이터광장 population and demographics.  
+- Voluntary smartphone-based GPS tracking (with user consent).  
+- Points of Interest (POI) datasets: cafes, coworking spaces, nightlife, etc.  
+- Optional: telecom or card transaction data for aggregated footfall (privacy-compliant).  
+
+---
+
+## 🧪 Technical Approach
+1. **Data Collection**  
+   - Integrate public datasets + voluntary app-based GPS logs.  
+
+2. **Hotspot Detection**  
+   - Use clustering (DBSCAN, KMeans) to find youth activity clusters.  
+
+3. **Temporal Modeling**  
+   - Analyze time-based usage (weekday vs. weekend, daytime vs. nighttime).  
+
+4. **POI Tagging**  
+   - Classify hotspots by type (study, leisure, work, community).  
+
+5. **Visualization**  
+   - Build GIS dashboards or interactive maps showing youth mobility.  
+
+---
+
+## 💡 Applications
+- Reveal **actual popular areas** among Seoul youth, beyond assumed hotspots.  
+- Enable targeted program allocation (career workshops, health pop-ups, cultural events).  
+- Provide **district-level insights** for responsive local government planning.  
+- Expandable to other age groups or cities for broader urban mobility insights.  
+
+---
+
+## ⚠️ Notes
+- Project prioritizes **consent and anonymization** — no continuous tracking without user permission.  
+- Car ownership as a proxy may bias the sample; non-car users must be included in later phases.  
+- Policy applications may vary across Seoul districts, requiring cross-agency collaboration.  
+
+---
+
+## 🔗 Related Inspirations
+- Seoul Open Data Plaza vehicle registration datasets.  
+- Google Location History–based urban mobility studies.  
+- Copenhagen City Data Exchange youth activity visualization.  
+- U.S. city reports on millennial migration trends.  
+
+---
+
+> “Design policies where youth actually live, work, and play — not just where the data says they should.”

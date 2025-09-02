@@ -1,63 +1,79 @@
-# 🧠 Project Title  
-**Trust or Trick? Detecting Suspicious Movie Reviews through Behavioral Signals**
+# 🧠 Project Title: Trust or Trick? — Detecting Suspicious Movie Reviews through Behavioral Signals
+
+## 🔍 Summary
+This project develops a system to detect **suspicious or manipulative movie reviews** by analyzing discrepancies between star ratings, review content, and user behavior patterns.  
+It aims to flag potentially **promotional or biased reviews**, helping consumers make more informed viewing decisions.
 
 ---
 
-## 🔍 Summary  
-This project aims to detect suspicious or potentially manipulative movie reviews by analyzing discrepancies between star ratings and review content. By combining natural language processing with user behavior metadata, it identifies reviews that may be artificially inflated or promotional, helping consumers make more informed decisions.
+## 🎯 Problem Statement
+- Moviegoers are often misled by reviews that don’t match their actual experience.  
+- Some reviews may be artificially inflated for promotional purposes, distorting public perception.  
+- Current review platforms rely heavily on **star ratings** without verifying textual consistency or reviewer credibility.  
+
+**Goal:** Identify and surface inconsistencies between **ratings, content, and behavior** to improve trust in movie review ecosystems.
 
 ---
 
-## 🎯 Problem Statement  
-Moviegoers are often misled by overly positive reviews that don't match their experience. Many reviews may be written for promotional purposes, creating a distorted perception of a film’s quality. Traditional review aggregators rely on star ratings and unverified user input, lacking tools to detect or flag these inconsistencies.
+## 📚 Background & Motivation
+- Inspired by personal experience: a mediocre film showed **dozens of glowing reviews** despite many low ratings.  
+- Raised suspicion of **review manipulation** or coordinated promotion.  
+- Consumers depend heavily on reviews, making this a **transparency issue** in digital society.  
+- Similar problems exist in **e-commerce and food delivery platforms**, but movies are highly reputation-driven, making manipulation impactful.
 
 ---
 
-## 📚 Background & Motivation  
-- Inspired by a personal experience: a boring film had an unusually high number of glowing reviews, despite having many low ratings.  
-- Raised suspicion that some reviews were promotional or manipulated.  
-- Consumers often rely on reviews, making this a trust and transparency issue in digital society.  
-- Similar problems exist in other domains (e.g., products, restaurants), but films are emotionally sensitive and reputation-driven.
+## 📊 Potential Data Sources
+- **Naver Movie Review Dataset** (네이버 영화 리뷰 감성 데이터).  
+- IMDb / Rotten Tomatoes scraped reviews.  
+- Public labeled datasets (AIHub, Kaggle) for training sentiment models.  
+- User metadata: account age, review frequency, rating distribution.  
+- Optional: manually curated examples of verified vs. suspicious reviews.  
 
 ---
 
-## 📊 Potential Data Sources  
-- Naver Movie Review Dataset (네이버 영화 리뷰 감성 데이터)  
-- IMDb reviews or Rotten Tomatoes scraped data  
-- Public sentiment-labeled review datasets (e.g., AIHub, Kaggle)  
-- User metadata: review count, account age, review timing  
-- Optional: manually labeled examples of verified vs. suspicious reviews
+## 🧪 Technical Approach
+1. **Sentiment–Rating Consistency**  
+   - Train sentiment classifier → compare predicted sentiment vs. star rating.  
+   - Large discrepancies flagged as suspicious.  
+
+2. **Keyword & Textual Patterns**  
+   - Detect overuse of promotional keywords (“masterpiece,” “must-watch”).  
+   - Check for repeated phrases across multiple reviews.  
+
+3. **Temporal & Behavioral Analysis**  
+   - Identify bursts of similar reviews posted in short time spans.  
+   - Profile reviewer behavior: only reviews one film, excessive 5-star bias, or sudden account creation.  
+
+4. **Scoring & Visualization**  
+   - Build a **Review Trust Score** using Random Forest / LightGBM / transformers.  
+   - Heatmaps for rating–sentiment alignment.  
+   - Graph clustering of suspicious reviewer networks.  
 
 ---
 
-## 🧪 Possible Approaches  
-- Sentiment analysis vs. star rating inconsistency detection  
-- Repetition or overuse of promotional keywords (e.g., “masterpiece”, “must-watch”)  
-- Clustering reviews by similarity and time (bot bursts or paid campaigns)  
-- User behavior profiling (reviewing only 1 film, too many 5-stars, etc.)  
-- Trustworthiness scoring model using Random Forest, LightGBM, or transformer models  
-- Visualization: heatmap of review consistency, network graph of review clusters
+## 💡 Applications
+- **Consumers:** Quick indicators of likely authentic vs. suspicious reviews.  
+- **Platforms:** Tools to moderate or adjust weighting of reviews.  
+- **Research:** Extend framework to other domains (e-commerce, restaurants, books).  
+- **Society:** Increase transparency and trust in digital feedback systems.  
 
 ---
 
-## 💡 Expected Insights or Applications  
-- Reveal which movies have high proportions of suspicious or inconsistent reviews  
-- Help consumers quickly identify which reviews are likely genuine  
-- Provide tools for platforms to moderate or weight reviews differently  
-- Expandable to other sectors (e-commerce, restaurant, books)
+## ⚠️ Notes
+- Not intended as a censorship tool — purely for transparency.  
+- Must respect reviewer privacy (no personal data exposure).  
+- “Suspicious” does not equal “fake”; false positives must be minimized.  
+- Crowdsourced validation could strengthen accuracy and trust.  
 
 ---
 
-## ⚠️ Notes  
-- This is **not** a censorship tool; it only aids in transparency  
-- Privacy of reviewers must be respected — no personal information tracked  
-- Requires caution in labeling “suspicious” reviews (risk of false positives)  
-- Crowdsourced validation could improve model reliability
+## 🔗 Related Inspirations
+- Fake review detection studies in NLP (*Deceptive Opinion Spam*).  
+- Kaggle projects on Amazon review authenticity.  
+- Rotten Tomatoes review scoring inconsistencies.  
+- Naver 영화 후기 이상치 탐지 관련 블로그 및 연구.  
 
 ---
 
-## 🔗 Related Projects / Inspirations  
-- Fake review detection studies in NLP (e.g., Deceptive Opinion Spam)  
-- Kaggle’s Amazon review authenticity classification  
-- Rotten Tomatoes review scoring inconsistencies  
-- Naver 영화 후기 이상치 탐지 관련 블로그들
+> “Not every five-star shines the same — let’s reveal the truth behind the ratings.”

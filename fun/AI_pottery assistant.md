@@ -1,57 +1,74 @@
-# 🧠 Project Title:  
-**AI Pottery Assistant: Suggesting and Evaluating Ceramic Forms**
+# 🧠 Project Title: AI Pottery Assistant — Suggesting and Evaluating Ceramic Forms
+
+## 🔍 Summary
+AI Pottery Assistant is a design-support tool that helps potters and designers generate **diverse pottery shapes** and evaluate their **aesthetic and functional qualities**.  
+It combines traditional craftsmanship with modern AI, enabling both beginners and experts to explore new forms and receive objective feedback.
 
 ---
 
-## 🔍 Summary  
-This project aims to assist potters and designers by using AI to **generate diverse pottery shapes** based on sketches or parameters, and provide **aesthetic or functional evaluations** of the forms. It bridges traditional ceramics with modern generative design tools.
+## 🎯 Problem Statement
+- Pottery design is creative but constrained by imagination and skill.  
+- Beginners struggle with **balance, proportion, and stability**.  
+- Experts may benefit from design augmentation or evaluation support.  
+- There is no AI tool dedicated to the nuanced and organic forms of ceramics.  
+
+**Goal:** Provide AI-driven generation and evaluation tools to assist pottery ideation and training.
 
 ---
 
-## 🎯 Problem Statement  
-Pottery design is highly creative but often constrained by the artist’s immediate imagination or technique. Beginners struggle with form ideation, while experts may benefit from design augmentation or objective evaluation tools. There is a lack of AI tools specifically tailored for the nuanced and organic world of ceramics.
+## 📚 Background & Motivation
+- Inspired by attending a pottery workshop: fun process, but results were often disappointing.  
+- Realized many learners face the same challenge of form imbalance.  
+- Pottery has infinite variations (bowls, vases, cups, jars), making it ideal for generative models.  
+- AI design tools (GANs, DALL·E, etc.) show the potential of human–AI collaboration in art.  
 
 ---
 
-## 📚 Background & Motivation  
-- Recently experienced a **hands-on pottery workshop** and found it both exciting and frustrating — the clay work was fun, but the final result was… disappointing 😅  
-- Realized that many beginners face the same challenges in **form balance, proportion, and stability**.  
-- Inspired by AI-generated design tools (like GANs and DALL·E), thought: _What if AI could assist in pottery ideation and feedback?_  
-- Pottery has infinite variations in form—jars, bowls, cups, vases—making it a rich design domain for generative models.  
-- Many potters, both beginners and experts, could benefit from form exploration and evaluation support.
+## 📊 Potential Data Sources
+- 3D pottery model datasets (Sketchfab, Thingiverse, MyMiniFactory).  
+- Museum collections: The Met, British Museum, Korea Craft Museum.  
+- Social media datasets (Instagram, Pinterest) for modern ceramic designs.  
+- Manually annotated features: rim type, foot type, height–width ratio, curvature smoothness.  
 
 ---
 
-## 📊 Potential Data Sources  
-- 3D pottery model datasets (e.g., Sketchfab, Thingiverse, MyMiniFactory)  
-- Image-based ceramic datasets from museums (e.g., The Met, British Museum, Korea Craft Museum)  
-- User-generated content from Instagram or Pinterest (optional)  
-- Manual annotation for shape features (rim, foot, height/width ratio, curve smoothness)
+## 🧪 Technical Approach
+1. **Shape Generation**  
+   - Variational Autoencoders (VAE) or GANs for 2D silhouettes or 3D meshes.  
+   - Conditional generation based on parameters (height, style, period).  
+
+2. **Shape Evaluation**  
+   - Feature extraction (symmetry, proportions, smoothness).  
+   - Train models to predict aesthetic or balance scores.  
+
+3. **User Interface**  
+   - Interactive input via Streamlit or Gradio.  
+   - Sketch-to-shape functionality or parameter sliders.  
+   - Blender integration for 3D previews and STL export.  
 
 ---
 
-## 🧪 Possible Approaches  
-- **Shape Generation**  
-  - Use VAE (Variational Autoencoder) or GANs to generate new forms in 2D silhouettes or 3D mesh  
-  - Conditional generation based on parameters (e.g., height, style, time period)
-
-- **Shape Evaluation**  
-  - Extract features (symmetry, smoothness, proportions) using image processing or 3D analysis  
-  - Train models to predict "balance" or aesthetic rating from expert-labeled data  
-
-- **Interface**  
-  - Use Streamlit or Gradio to allow interactive sketch input or slider-based form generation  
-  - Optional: Blender integration for 3D shape preview and STL export  
+## 💡 Applications
+- Assist potters with rapid **form ideation**.  
+- Provide **feedback tools** for beginners learning aesthetics.  
+- Enable co-creation between human artisans and AI.  
+- Industrial applications: digital fabrication, 3D printing, ceramic product design.  
 
 ---
 
-## 💡 Expected Insights or Applications  
-- Tool for potters to explore design variations quickly  
-- AI-based feedback for beginners learning shape aesthetics  
-- Novel collaborative model between human craftsmanship and machine creativity  
-- Potential use in industrial ceramic design or digital fabrication (e.g., 3D printing)
+## ⚠️ Notes
+- Requires high-quality 3D training data, which may be scarce.  
+- Aesthetic evaluation is subjective → needs expert input for labeling.  
+- Real-world adoption depends on usability and artist trust.  
 
 ---
 
-## 🗂️ Suggested Folder Name  
+## 🔗 Related Inspirations
+- GAN-based product design tools.  
+- Museum digital collections of ceramics.  
+- Generative art platforms exploring form and function.  
+
+---
+
+## 🗂️ Suggested Folder Name
 `creative/ai-pottery-assistant`

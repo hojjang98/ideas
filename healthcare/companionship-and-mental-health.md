@@ -1,34 +1,68 @@
 # 🧠 Project Title: Companionship and Mental Health
 
-## 🔍 Summary  
-This project explores how non-human companionship—such as pets and generative AI (e.g., chatbots)—can affect mental health outcomes, particularly in individuals experiencing depression, anxiety, or social isolation.
+## 🔍 Summary
+This project explores how **non-human companionship** — such as pets and generative AI (e.g., chatbots) — influences mental health outcomes, especially for individuals facing **depression, anxiety, or social isolation**.
 
-## 🎯 Problem Statement  
-Loneliness and mental health issues are increasing, especially among single-person households and younger generations.  
-Can alternative forms of companionship (e.g., pets, AI) provide emotional support and measurable mental health benefits?
+---
 
-## 📚 Background & Motivation  
-- Some studies suggest that pet ownership may help reduce feelings of loneliness and stress, though evidence on its direct effect on depression and anxiety remains mixed.  
-- Emerging evidence shows that AI companions like Replika, ChatGPT, or mental health apps (e.g., Woebot) are being used as emotional outlets.  
+## 🎯 Problem Statement
+- Loneliness and mental health issues are rising, particularly among single-person households and younger generations.  
+- While human relationships are irreplaceable, alternative companionship forms (pets, AI companions) may provide emotional support.  
 
-## 📊 Potential Data Sources  
-- Public health data: depression and anxiety rates (by age, gender, region)  
-- Pet ownership statistics (e.g., number of dogs/cats per household)  
-- App usage metrics for mental health or AI companions (if accessible)  
-- Survey data or sentiment analysis from online communities
+**Goal:** Investigate whether and how pets and AI companions contribute to measurable improvements in mental well-being.
 
-## 🧪 Possible Approaches  
-- Correlation analysis between pet ownership and mental health indicators  
-- Sentiment analysis of social media/posts mentioning AI companions  
-- Time series analysis to detect trends in AI usage vs. mental health incidents  
-- Case studies or literature reviews on therapeutic roles of AI and animals
+---
 
-## 💡 Expected Insights or Applications  
-- Evidence supporting the psychological benefits of AI-based or animal companionship  
-- Input for mental health policy or digital therapy tools  
-- Foundations for building or evaluating AI companions tailored to emotional well-being
+## 📚 Background & Motivation
+- Research suggests pet ownership may reduce stress and loneliness, though evidence on depression/anxiety impact is mixed.  
+- AI companions (Replika, ChatGPT, Woebot) are increasingly used as emotional outlets.  
+- Understanding these trends can inform both **mental health interventions** and **digital therapy design**.  
 
-## 📝 Notes  
-- Consider ethical implications of relying on AI for emotional support  
-- Include generational differences in perception of “companionship”  
-- Opportunity to collaborate with psychology researchers or human-computer interaction specialists
+---
+
+## 📊 Potential Data Sources
+- Public health data: prevalence of depression, anxiety, loneliness by demographic group.  
+- Pet ownership statistics (household-level by region, species breakdown).  
+- Mental health app or chatbot usage metrics (if available).  
+- Survey data and sentiment analysis from online communities discussing pets or AI companions.  
+
+---
+
+## 🧪 Technical Approach
+1. **Statistical Analysis**  
+   - Correlate pet ownership rates with mental health indicators across populations.  
+
+2. **Text/Sentiment Analysis**  
+   - Mine social media and forums for posts about AI companions or pets and extract emotional tone.  
+
+3. **Time-Series Analysis**  
+   - Compare growth in AI companion usage vs. mental health incidence over time.  
+
+4. **Case Studies / Literature Review**  
+   - Summarize findings on therapeutic roles of pets and AI-based companions.  
+
+---
+
+## 💡 Applications
+- **Evidence Base:** Provide data-driven insights on non-human companionship benefits.  
+- **Policy:** Inform mental health initiatives encouraging animal adoption or safe AI use.  
+- **Technology:** Support development of AI companions designed for well-being.  
+- **Research:** Open pathways for interdisciplinary collaboration between AI and psychology.  
+
+---
+
+## ⚠️ Notes
+- Ethical implications: over-reliance on AI for emotional support.  
+- Generational differences in perception of companionship must be considered.  
+- Requires careful balance of **human–AI–animal** roles in mental health contexts.  
+
+---
+
+## 🔗 Related Inspirations
+- Studies on pet therapy and emotional support animals.  
+- AI companion apps like Replika and Woebot.  
+- Human–Computer Interaction (HCI) research on digital relationships.  
+
+---
+
+> “Can companionship beyond humans play a meaningful role in mental health?”

@@ -1,45 +1,77 @@
-# 🧠 Project Title  
-**Urban Noise Palette: Mapping City Sounds into Colors**  
+# 🧠 Project Title: Urban Noise Palette — Mapping City Sounds into Colors
+
+## 🔍 Summary
+Urban Noise Palette captures and analyzes **city sounds** across different locations, mapping their **frequency spectra into color palettes**.  
+By transforming noise into a visual medium, it creates an **intuitive and artistic representation of urban soundscapes**, bridging environmental monitoring with public engagement.
 
 ---
 
-## 🔍 Summary  
-This project visualizes **urban noise** by recording sounds across different city locations and mapping their **frequency spectrum to colors**. By comparing noise “palettes” for various places and times of day, it provides an intuitive and artistic way to understand urban soundscapes.  
+## 🎯 Problem Statement
+- Traditional noise measurement focuses on **decibel levels (dB)**, which ignore the *quality and character* of sound.  
+- Residents and policymakers struggle to grasp **what types of sounds dominate** urban life using numbers alone.  
+- There is a lack of tools that combine **scientific accuracy** with **publicly accessible visualization**.  
+
+**Goal:** Reframe noise as not just pollution, but as **data with meaning**, making it visible and interpretable.
 
 ---
 
-## 🎯 Problem Statement  
-- Traditional noise measurement relies mainly on **decibel (dB)** values, which fail to capture the *character* of sounds.  
-- People find it hard to grasp the **quality and variety** of urban noise through numbers alone.  
+## 📚 Background & Motivation
+- Environmental visualization is gaining traction as a way to **influence awareness and urban policy**.  
+- Not all noise is harmful — cicadas in summer are loud but meaningful, showing that **context matters**.  
+- By linking sound → frequency → color, people can **see the “palette” of a city’s atmosphere**.  
+- This blend of **environmental science + digital art** can engage both citizens and planners.  
 
 ---
 
-## 📚 Background & Motivation  
-- Environmental data visualization is gaining traction as a tool for public awareness and policy-making.  
-- Sound is often treated as pollution, but not all noise is meaningless. For example, cicadas are loud in summer, but their sound is a survival mechanism and part of the seasonal atmosphere. This reminds us that **noise can also hold meaning**, not just be an annoyance.  
-- Merging environmental monitoring with artistic expression can engage both the public and decision-makers.  
+## 📊 Potential Data Sources
+- **UrbanSound8K** and other open urban audio datasets.  
+- Field recordings with microphones / portable recorders.  
+- Public APIs from noise monitoring stations.  
+- GIS shapefiles for integrating palettes with city maps.  
 
 ---
 
-## 📊 Potential Data Sources  
-- **Urban sound datasets** (e.g., UrbanSound8K)  
-- Field recordings using microphones or portable recorders  
-- Open environmental noise monitoring APIs  
-- GIS shapefiles for city mapping  
+## 🧪 Technical Approach
+1. **Sound Collection**  
+   - Record across multiple city spots and times (rush hour, night, seasonal).  
+
+2. **Frequency Analysis**  
+   - Use FFT to extract noise spectrum characteristics.  
+
+3. **Color Mapping**  
+   - Map frequency ranges to RGB or perceptual color scales (e.g., low = blue, mid = green, high = red).  
+
+4. **Spatial Visualization**  
+   - Overlay palettes on maps with GIS integration.  
+   - Generate interactive dashboards or heatmaps.  
+
+5. **Temporal Dimension**  
+   - Create time-lapse views showing palette shifts across days/seasons.  
 
 ---
 
-## 🧪 Possible Approaches  
-1. **Sound collection** at multiple urban locations and times  
-2. **FFT-based frequency analysis** to extract spectrum data  
-3. **Color mapping** (e.g., low frequency = blue, mid = green, high = red)  
-4. **GIS integration** to overlay sound palettes on city maps  
-5. **Time-lapse visualization** to track changes in noise profiles over days or seasons  
+## 💡 Applications
+- **Visual noise maps** that show *what kind* of noise dominates, not just how loud.  
+- **Public awareness campaigns** highlighting harmful vs. meaningful noise.  
+- **Art installations** that project live city sounds into colors.  
+- **Urban planning input** for acoustic redesign of problem areas.  
+- **Citizen science engagement**: users contribute sound recordings to expand the dataset.  
 
 ---
 
-## 💡 Expected Insights or Applications  
-- **Visual noise maps** showing not just loudness but the nature of urban sounds  
-- **Awareness campaigns** that highlight harmful vs. meaningful noises  
-- **Art installations** that translate real-time city sounds into color projections  
-- **Urban planning input** to identify areas needing acoustic redesign  
+## ⚠️ Notes
+- Noise perception is subjective; color mappings may need calibration for clarity.  
+- Field data must consider microphone sensitivity and environmental bias.  
+- Must distinguish between **ambient sound** (neutral/meaningful) and **noise pollution** (harmful).  
+
+---
+
+## 🔗 Related Inspirations
+- **UrbanSound8K dataset** for classification tasks.  
+- Environmental sonification & soundscape studies.  
+- Artistic projects translating sound into light/color.  
+- Smart city dashboards integrating multi-sensory data.  
+
+---
+
+> “See the sounds of your city — every place has its own palette.”

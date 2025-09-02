@@ -1,52 +1,85 @@
 # 🧠 Project Title: Mapping Legal Smoking Zones in South Korea
 
-## 🔍 Summary  
-This project aims to visualize and analyze **legally designated smoking areas** across South Korea using GIS. It investigates the **gap between smoking restrictions and available legal zones**, with a focus on **urban accessibility** and **spatial justice** for smokers.
-
-## 🎯 Problem Statement  
-In many cities, “No Smoking” signs are ubiquitous—even on sidewalks or private business entrances. However, it is often unclear **where smokers are legally allowed to smoke**. Arbitrary or unofficial stickers create confusion and **lack of transparency**, making it difficult for smokers to comply with the law while maintaining basic access.
-
-## 📚 Background & Motivation  
-- The number of non-smoking zones has increased rapidly since the 2010s  
-- Government policies aim to reduce second-hand smoke but provide few legal alternatives  
-- Smokers frequently report difficulty finding legal areas  
-- There may be spatial bias: some neighborhoods might have **zero legal zones**  
-- The project doesn't promote smoking, but rather aims to ensure **policy clarity and fairness**
-
-## 📊 Potential Data Sources  
-- Seoul Open Data Plaza (서울시 열린데이터광장): public smoking area locations  
-- Ministry of Environment / MOLIT geospatial datasets  
-- Complaint data regarding smoking violations (e.g., 120 Dasan Call Center)  
-- Government open data portals: legal non-smoking zone listings  
-- Crawled map data from Kakao/Daum/Naver Maps (searching for 흡연구역)  
-- Field survey or user-submitted data (for future crowdsourced mapping)
-
-## 🧪 Possible Approaches  
-- GIS visualization of legal smoking zones vs. non-smoking zones by density  
-- Legal analysis of regional smoking policies and enforcement  
-- Social media or community forum mining: smokers' feedback and experience  
-- Optimization modeling: suggesting smoking zone locations based on traffic and population density
-
-## 💡 Expected Insights or Applications  
-- Reveal **urban blind spots** where smoking is heavily restricted with no legal options  
-- Create a prototype for a “Where to Smoke” location app or map  
-- Provide data-driven recommendations for local governments  
-- Facilitate better policy balance between non-smokers’ rights and smokers’ needs  
-- Potential collaboration with urban planners or public health researchers
-
-## ⚠️ Notes  
-- This project does **not** promote smoking  
-- Instead, it tackles **policy inconsistency**, transparency, and accessibility  
-- Regional regulation differences (e.g., district-level laws) should be considered  
-- Community-based mapping or citizen reporting could enhance scalability
-
-## 🔗 Related Projects / Inspirations  
-- “SmokeMap” (pilot project in Japan)  
-- Seoul’s Non-Smoking Zone Ordinances  
-- “WhereToSmoke” app (used in parts of the U.S.)
+## 🔍 Summary
+This project visualizes and analyzes **legally designated smoking areas** across South Korea using GIS.  
+It investigates the **gap between smoking restrictions and available legal zones**, emphasizing **urban accessibility** and **spatial justice** for smokers.
 
 ---
 
-## ✅ Implementation  
+## 🎯 Problem Statement
+- “No Smoking” signs are ubiquitous, yet it is often unclear **where smoking is legally allowed**.  
+- Arbitrary or unofficial stickers create confusion and limit compliance.  
+- Smokers face practical challenges in finding legal areas, while non-smokers demand safe environments.  
+
+**Goal:** Map and analyze smoking zones to clarify regulations and assess urban accessibility.
+
+---
+
+## 📚 Background & Motivation
+- Non-smoking zones have rapidly expanded since the 2010s.  
+- Government policies reduce second-hand smoke but provide few designated alternatives.  
+- Smokers frequently report difficulty finding legal smoking areas.  
+- Potential spatial bias: some neighborhoods may have **no legal zones at all**.  
+- The project does not promote smoking; instead, it focuses on **policy transparency and fairness**.  
+
+---
+
+## 📊 Potential Data Sources
+- Seoul Open Data Plaza: official smoking area datasets.  
+- Ministry of Environment / MOLIT geospatial data.  
+- Complaint records on smoking violations (e.g., 120 Dasan Call Center).  
+- Government open data portals listing non-smoking zones.  
+- Crawled map data from Kakao/Daum/Naver.  
+- Field surveys or user-submitted data (future crowdsourced mapping).  
+
+---
+
+## 🧪 Technical Approach
+1. **GIS Visualization**  
+   - Map smoking zones vs. non-smoking zones, highlight density differences.  
+
+2. **Spatial Analysis**  
+   - Calculate accessibility metrics (nearest distance, average distance).  
+   - Identify neighborhoods lacking legal zones.  
+
+3. **Policy Review**  
+   - Compare regional smoking policies and enforcement practices.  
+
+4. **Community Feedback**  
+   - Collect opinions from forums/social media on usability of existing smoking zones.  
+
+5. **Optimization**  
+   - Suggest optimal smoking zone placements based on traffic and population density.  
+
+---
+
+## 💡 Applications
+- Reveal **urban blind spots** with no legal smoking options.  
+- Prototype a **“Where to Smoke” app** for public use.  
+- Provide evidence-based recommendations for local governments.  
+- Contribute to debates on balancing non-smoker rights and smoker accessibility.  
+- Collaborate with urban planners or public health researchers.  
+
+---
+
+## ⚠️ Notes
+- Regional differences (district-level laws) must be accounted for.  
+- Crowdsourced mapping could improve scalability and real-world accuracy.  
+- Sensitive policy context: project should remain **neutral and analytical**.  
+
+---
+
+## 🔗 Related Inspirations
+- “SmokeMap” (pilot project in Japan).  
+- Seoul’s Non-Smoking Zone Ordinances.  
+- U.S. “WhereToSmoke” app.  
+
+---
+
+## ✅ Implementation
 GitHub Repository: [hojjang98/Misc-Projects – seoul-smoking-gis](https://github.com/hojjang98/Misc-Projects/tree/main/seoul-smoking-gis)  
-This project has been implemented using **Folium**, **Pandas**, and **public GIS data** for Yongsan-gu and Yeongdeungpo-gu in Seoul. The repo contains code for mapping, distance analysis, and initial visualization results.
+Implemented using **Folium**, **Pandas**, and **public GIS data** for Yongsan-gu and Yeongdeungpo-gu in Seoul.  
+The repository includes:  
+- Smoking zone mapping scripts.  
+- Distance and accessibility analysis.  
+- Initial visualization results for selected districts.  

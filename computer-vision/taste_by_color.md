@@ -1,51 +1,60 @@
-# 🧠 Project Title: **Taste by Color: Predicting Seasoning Levels from Food Images**
+# 🧠 Project Title: Taste by Color — Predicting Seasoning Levels from Food Images
 
-## 🔍 Summary  
-This project explores whether the **seasoning level (under-seasoned, well-seasoned, over-seasoned)** of a dish can be inferred solely from its appearance—particularly its **color and visual texture**. Inspired by the real-world intuition of army cooks, the goal is to build a visual model that mimics human gut-feeling based on color.
-
----
-
-## 🎯 Problem Statement  
-- Cooking apps and recipes rarely tell you *how it should look* when seasoned properly.  
-- Beginners can't tell if their food is over- or under-seasoned just by looking.  
-- Human experts (like army cooks) often judge seasoning levels by color alone.  
-→ Can we **train a machine to do the same?**
+## 🔍 Summary
+Can the seasoning level of a dish (under-seasoned, well-seasoned, over-seasoned) be inferred **just by looking at it**?  
+This project investigates whether **color and texture cues** in food images can predict seasoning intensity, inspired by the intuition of experienced army cooks.
 
 ---
 
-## 📚 Background & Motivation  
-- Inspired by the creator’s personal experience as a military cook:  
-  **“I could tell whether a dish was salty or not just by looking at the color.”**  
-- Visual cues like darkness, redness, or oil sheen often correlate with flavor strength.  
-- Could aid beginner cooks, automated kitchens, or food photo reviewers.
+## 🎯 Problem Statement
+- Cooking apps and recipes rarely specify *how food should look* when properly seasoned.  
+- Beginners struggle to identify under- or over-seasoning by appearance.  
+- Experts often rely on color and sheen as strong indicators.  
+
+**Goal:** Build a model that can visually judge seasoning levels, mimicking human intuition.
 
 ---
 
-## 📊 Potential Data Sources  
-- YouTube cooking videos + subtitles ("too salty", "a bit bland")  
-- Recipe blogs with final dish photos and taste comments  
-- Self-generated dataset: same recipe cooked at different seasoning levels  
-- Academic papers or datasets on food image classification
+## 📚 Background & Motivation
+- Originated from personal experience as a military cook:  
+  *“I could tell whether food was salty or bland just by its color.”*  
+- Color darkness, redness, or oiliness often correlate with flavor strength.  
+- Potential uses in beginner cooking support, automated kitchens, or food photo review systems.
 
 ---
 
-## 🧪 Possible Approaches  
-- Extract color histograms, brightness, and saturation metrics from food images  
-- Train a CNN to classify images into: **under-seasoned / well-seasoned / over-seasoned**  
-- Control for lighting conditions or filter out images with artificial coloring  
-- Augment data using GANs to simulate variations in seasoning levels
+## 📊 Potential Data Sources
+- YouTube cooking videos with subtitles mentioning taste (“too salty”, “a bit bland”)  
+- Recipe blogs with dish photos and taste comments  
+- Self-generated dataset: cooking the same recipe with varying seasoning levels  
+- Public datasets or academic food image classification studies
 
 ---
 
-## 💡 Expected Insights or Applications  
-- AI assistant for home cooks: “Your stew looks a bit pale—maybe add more soy sauce.”  
-- Visual cooking tutorials that *show* what the right color looks like  
-- Quality control in food delivery or automated kitchens  
-- Fun mobile apps that score your dish’s taste based on looks alone
+## 🧪 Possible Approaches
+- Image feature extraction: color histograms, brightness, saturation  
+- Train CNN classifier: **under-seasoned / well-seasoned / over-seasoned**  
+- Control for lighting differences or exclude artificially colored images  
+- Data augmentation with GANs to simulate seasoning variations
 
 ---
 
-## 🤖 Bonus Ideas  
-- Connect with **text-based recipe inputs** to predict expected color vs actual result  
-- Recommend adjustments: “Add 1 tsp of salt to match ideal tone.”  
-- Future extension: combine with **smell/sound sensors** for multimodal flavor prediction
+## 💡 Applications
+- **Cooking Assistant:** Suggest adjustments (“Your stew looks pale—add soy sauce”).  
+- **Visual Tutorials:** Show learners what “properly seasoned” looks like.  
+- **Food Industry:** Quality control in delivery or automated kitchens.  
+- **Consumer Apps:** Fun mobile app scoring your dish’s taste by looks.
+
+---
+
+## ⚠️ Notes
+- Must carefully handle lighting and camera bias.  
+- Dataset creation is challenging without subjective human taste annotations.  
+- Not about promoting food aesthetics alone, but practical cooking guidance.
+
+---
+
+## 🔗 Related Inspirations
+- Chef intuition in large-scale kitchens (e.g., army cooks)  
+- Food recognition/classification literature  
+- Human-in-the-loop cooking assistance systems
