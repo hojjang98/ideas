@@ -72,12 +72,3 @@ It emphasizes **personalization beyond big-brand catalogs**, supports **small/lo
 - Wayfair (AR shopping).  
 - Pinterest Room Decor boards (non-AR inspiration).  
 
----
-
-## ✅ Implementation
-GitHub Repository: [hojjang98/Misc-Projects – ar-home-stylist](https://github.com/hojjang98/Misc-Projects/tree/main/ar-home-stylist)  
-Prototype stack: **ARKit/ARCore**, **TensorFlow Lite (style detection)**, **React Native/Flutter** for mobile UI.  
-Planned features:  
-- AR placement demo.  
-- Basic color/style matcher.  
-- Sample product catalog integration.  
